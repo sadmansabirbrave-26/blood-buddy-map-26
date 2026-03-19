@@ -1,1 +1,3 @@
-# blood-buddy-map-26
+# Welcome to your Lovable project
+
+TODO: Document your project here

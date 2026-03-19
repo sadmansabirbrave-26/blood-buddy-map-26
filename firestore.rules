@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow anyone to read, write, update, and delete any document
+    // WARNING: These rules allow public access to your database
+    // Only use these rules for development/testing purposes
+    match /{document=**} {
+      allow read, write, update, delete: if true;
+    }
+  }
+}
